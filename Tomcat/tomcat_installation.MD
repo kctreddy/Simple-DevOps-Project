@@ -70,3 +70,15 @@ goto tomcat home directory and Add below users to conf/tomcat-users.xml file
    ```
 1. Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
 
+### C:: remember these
+ ```sh
+ find / -name context.xml
+ ```
+ comments the lines we know in 2 context files.
+ 
+ create the links for start and stop the tomcat.
+  ```sh
+ /conf/tomcat-users.xml
+ ```
+ create the users
+ 
