@@ -25,6 +25,17 @@ Maven is a code build tool which used to convert your code to an artifact. this 
    M2=$M2_HOME/bin
    PATH=<Existing_PATH>:$M2_HOME:$M2
    ```
+#### C:: Install Maven on Jenkins
+1. Download maven packages https://maven.apache.org/download.cgi onto Jenkins server. In this case, I am using /opt/maven as my installation directory
+ - Link : https://maven.apache.org/download.cgi
+    ```sh
+     # followed the same commands as mentioned in the video
+     cd /opt
+     # downloading maven version 3.6.0
+     wget paste_the_copied_link_from_website
+     tar -xvzf file.tar.gz
+     ```
+
 #### Checkpoint 
 1. logoff and login to check maven version
   
