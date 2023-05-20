@@ -37,10 +37,10 @@ Maven is a code build tool which used to convert your code to an artifact. this 
      tar -xvzf file.tar.gz
      mvn --version # works only in this path, so in order to work this anywhere we need set up M2_HOME, M2 and JAVA_HOME paths in .bash_profile of the user and add these to the path variable.
    vi ~/.bash_profile
-   M2_HOME=/opt/maven/apache-maven-3.6.1
-   M2=$M2_HOME/bin
-   JAVA_HOME==/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.amzn2.0.1.x86_64
-   PATH=<Existing_PATH>:$M2_HOME:$M2:$JAVA_HOME
+      M2_HOME=/opt/maven/apache-maven-3.6.1
+      M2=$M2_HOME/bin
+      JAVA_HOME==/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.amzn2.0.1.x86_64
+      PATH=<Existing_PATH>:$M2_HOME:$M2:$JAVA_HOME
      ```
 #### ----------------------------------------------------------------------------------------------------
 #### Checkpoint 
@@ -58,4 +58,17 @@ So far we have completed the installation of maven software to support maven plu
 
 2. Configure maven path
   - `Manage Jenkins` > `Global Tool Configuration` > `Maven`
-
+  - C:: `Manage Jenkins` > `Global Tool Configuration` > `JDK`
+## C:: Build a maven project. Jenkins takes advantage of your ** POM files ** and drastically reduces the configuration. 
+### C::
+ Maven Build project:
+  1st downloads all the dependencies which is required to build the project.
+  2nd runs few test cases.
+  3rd it builds the code.
+  4th In our case case we have modules Server and Webapp. Both of them are also successfull.
+   OVERALL BUILD IS SUCCESSFULL  -->  Created a ### WAR File
+  `WebApp` -->  `target` -->  `surefire` ==>=>  Test cases results are stored in this path.
+  
+  Build Life cycle is made up of phases like 
+   1. 
+  
