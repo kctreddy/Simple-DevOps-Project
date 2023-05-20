@@ -59,7 +59,7 @@ So far we have completed the installation of maven software to support maven plu
 2. Configure maven path
   - `Manage Jenkins` > `Global Tool Configuration` > `Maven`
   - C:: `Manage Jenkins` > `Global Tool Configuration` > `JDK`
-## C:: Build a maven project. Jenkins takes advantage of your ** POM files ** and drastically reduces the configuration. 
+### C:: Build a maven project. Jenkins takes advantage of your `POM files` and drastically reduces the configuration. 
 ### C::
  Maven Build project:
   1st downloads all the dependencies which is required to build the project.
@@ -69,6 +69,13 @@ So far we have completed the installation of maven software to support maven plu
    OVERALL BUILD IS SUCCESSFULL  -->  Created a ### WAR File
   `WebApp` -->  `target` -->  `surefire` ==>=>  Test cases results are stored in this path.
   
-  Build Life cycle is made up of phases like 
-   1. 
+  Build Life cycle is made up of phases like:
+  ` 1. validate`
+  ` 2. compile`
+  ` 3. test`
+  ` 4. package`
+  ` 5. verify`
+  ` 6. install`
+  ` 7. deploy`
+  
   
