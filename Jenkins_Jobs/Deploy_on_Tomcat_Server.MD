@@ -44,3 +44,7 @@
          - Tomcat URL : `http://<PUBLIC_IP>:8080`
 
 Save and run the job now.
+
+#### C::
+If we select BUILD Trigger: *POLL SCM* then in the Console output starting line we can see `Started by an SCM agent`.
+If we select BUILD Trigger: Manual then in the Console output starting line we can see `Started by an user chandu`.
